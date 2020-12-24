@@ -1,0 +1,11 @@
+# Docker Compose Version
+version: "3.5" 
+
+# Docker Container
+services:
+  mongo:
+    container_name: mongo
+    image: mongo:4.2
+    ports:
+      - 27017:27017
+    command: mongod
